@@ -1,0 +1,68 @@
+model myShop
+
+class Shop
+	attributes
+		cashBalance : Integer
+		bankBalance : Integer
+	operations
+		depositMoney(x : Integer)
+		begin
+			self.cashBalance := self.cashBalance - x;
+			self.bankBalance := self.bankBalance + x;
+		end
+		orderItem(p : Product, quant : Integer)
+		begin
+			declare temp : Integer;
+			temp := self.supplier.fillOrder(p, quant);
+			self.bankBalance := self.bankBalance - (quant * temp);
+		end
+end
+
+class Supplier
+	attributes
+	operations
+		fillOrder(p : Product, q : Integer) : Integer
+		begin
+			p.stockLevel := p.stockLevel - q;
+			result := p.price;
+		end
+end
+
+class Product
+	attributes
+		name : String
+		stockLevel : Integer
+		price : Integer
+end
+
+association SuppliedBy between
+	Shop [1..*] role shops
+	Supplier [1] role supplier
+end
+
+association HasStock between
+	Supplier [1..*] role suppliers
+	Product [3..*] role products
+end
+
+constraints
+
+context Shop::depositMoney(x : Integer)
+	pre depositPre:
+		x <= self.cashBalance
+	post depositPost1:
+		self.cashBalance = self.cashBalance@pre - x
+	post depositPost2:
+		self.bankBalance = self.bankBalance@pre + x
+		
+context Supplier :: fillOrder(p : Product, q : Integer) : Integer
+	pre fillPre1:
+		products -> includes(p)
+	pre fillPre2:
+		p.stockLevel >= q
+		
+	post depositPost:
+		p.stockLevel = p.stockLevel@pre - q
+		
+context Supplier inv minStock:
+	self.products->size() >= 3

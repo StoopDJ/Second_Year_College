@@ -1,0 +1,51 @@
+model Shopping
+
+class Shop
+    attributes
+        cashBalance : Integer
+        bankBalance : Integer
+    operations        
+        depositMoney(x : Integer)
+        pre hasMoney: x <= cashBalance
+        post transferred: cashBalance + x = cashBalance@pre and 
+                          bankBalance - x = bankBalance@pre
+        
+        orderItem(p : Product, quant : Integer)
+        begin
+            --n := self.supplier.fillOrder(p, quant);
+            self.bankBalance := self.bankBalance - quant*p.price
+        end
+                               
+end
+
+class Supplier
+    operations
+        fillOrder(p : Product, q : Integer) : Integer
+        begin
+            p.stockLevel := p.stockLevel - q;
+           result := q * p.price           
+        end
+        pre inStock: products->includes(p)
+        pre enoughInStock: q <= p.stockLevel
+        post updateStock: p.stockLevel + q = p.stockLevel@pre
+            
+end
+
+class Product
+    attributes
+        name : String
+        stockLevel : Integer
+        price : Integer
+end
+
+association HasStock between
+    Supplier[1..*] role suppliers
+    Product[1..*] role products
+end
+
+association SuppliedBy between
+    Shop[1..*] role shops
+    Supplier[1] role supplier
+end
+    
+        
