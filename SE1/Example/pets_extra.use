@@ -1,0 +1,96 @@
+model myPets
+
+class Person
+  attributes
+    name : String
+    student_id : String
+    bank_balance : Integer
+end
+
+class PetOwner < Person
+	attributes
+		vetCost : Integer
+	operations
+		setVetFor(v : Veterinarian, a : Animal)
+		begin
+			insert(v, a) into Treats
+		end
+		payVetCost()
+		begin
+			declare sum : Integer;
+			self.vetCost := 0;
+			for pet in self.pets do
+				self.vetCost := pet.getVetCost();
+			end;
+			self.bank_balance := self.bank_balance - self.vetCost;
+		end
+		adoptNewPet(type : String, age : Integer)
+		begin
+			declare pet : Animal;
+			if type = 'cat' then
+				pet := new Cat;
+
+			end;
+			if type = 'dog' then
+				pet := new Dog;
+
+			end;
+			insert (self, pet) into Owns;
+			WriteLine('Enter name: ');
+			pet.name := ReadLine();
+			
+			pet.age := age;
+			pet.visits_to_vet := 0;
+		end
+
+end
+
+class Animal
+	attributes
+		name : String
+		age : Integer
+		visits_to_vet : Integer
+	operations
+		getVetCost() : Integer
+		begin
+			if self.age < 6 then
+				result := self.vet.visit_cost * self.visits_to_vet;
+			else
+				result := (self.vet.visit_cost - 2) * self.visits_to_vet;
+			end
+		end
+end
+
+class Cat < Animal
+  attributes
+    type : String
+    hunts : Boolean
+end
+
+class Dog < Animal
+  attributes
+    bark : String
+    energetic : Boolean
+end
+
+
+class Veterinarian
+  attributes
+    name : String
+    tel : String
+    visit_cost : Integer
+end
+
+association Owns between
+	PetOwner [1] role owner
+	Animal [1..*] role pets
+end
+
+association Treats between
+	Veterinarian [1] role vet
+	Animal [*] role patients
+end
+
+
+
+ 

@@ -1,0 +1,48 @@
+!new PetOwner('me')
+!me.bank_balance := 1000
+!me.name := 'Tom Smith'
+
+!new Cat('molly')
+!molly.name := 'Molly'
+!molly.age := 7
+!molly.visits_to_vet := 10
+!molly.type := 'Siamese'
+!molly.hunts := true
+
+!new Veterinarian('v1')
+!v1.name := 'Joey'
+!v1.tel := '123456'
+!v1.visit_cost := 30
+
+!new Veterinarian('v2')
+!v2.name := 'Susy'
+!v2.tel := '1234567'
+!v2.visit_cost := 20
+
+!insert (me, molly) into Owns
+
+!new Cat('puss')
+!puss.name := 'Puss'
+!puss.age := 5
+!puss.visits_to_vet := 3
+!puss.type := 'Tabby'
+!puss.hunts := false
+
+!new Dog ('rex')
+!rex.name := 'Rex'
+!rex.age := 10
+!rex.visits_to_vet := 15
+!rex.bark := 'loud'
+!rex.energetic := true
+
+!insert (me, rex) into Owns
+!insert (me, puss) into Owns
+
+!me.name := 'Amir Akbari'
+!me.student_id := 'C18442284'
+
+!me.setVetFor(v1, molly)
+!me.setVetFor(v2, puss)
+!me.setVetFor(v2, rex)
+
+!me.payVetCost()

@@ -1,0 +1,75 @@
+model University
+
+class Student
+	attributes
+		id : Integer
+		name : String
+		numModules : Integer
+		avGrade : Real
+	operations
+		takeModule(m: Module, n : String)
+		begin
+			self.numModules := self.numModules + 1;
+			m.Enrol(self, n);
+		end
+		getAvGrade() : Real
+		begin
+			declare temp : Integer, sum : Integer, counter : Integer;
+			counter := 0;
+			sum := 0;
+			for attempt in self.grades do
+				temp := attempt.GetMark();
+				sum := sum + temp;
+				counter := counter + 1;
+			end;
+			self.avGrade := sum / counter;
+			result := self.avGrade;
+		end
+		
+end
+		
+class Module
+	attributes
+		code : String
+		title : String
+	operations
+		GetTitle() : String
+		begin
+			result := self.title;
+		end
+		SetTitle(t : String)
+		begin
+			self.title := t;
+		end
+		Enrol(s : Student, n : String)
+		begin
+			declare a : Attempt;
+			a := new Attempt(n);
+			insert(self, a) into Teaches;
+			insert(s, a) into Studies;
+		end
+end
+		
+class Attempt
+	attributes
+		mark : Integer
+	operations
+		GetMark() : Integer
+		begin
+			result := self.mark;
+		end
+		SetMark(m : Integer)
+		begin
+			self.mark := m
+		end
+end
+
+association Studies between
+	Student [1] role student
+	Attempt [*] role grades
+end
+
+association Teaches between
+	Module [1] role module
+	Attempt [*] role gradebook
+end

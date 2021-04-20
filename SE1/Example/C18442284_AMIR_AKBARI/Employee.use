@@ -1,0 +1,60 @@
+model EmployeeSys
+
+-- classes
+
+class Person
+	  attributes
+		name : String
+		age : Integer
+end
+
+class Employee < Person
+	  attributes
+		salary : Real
+	  operations
+		raiseSalary(rate : Real) : Real
+end
+
+class Manager < Person
+	attributes
+		
+		salary : Real
+	operations
+		doHire(e : Employee)
+			begin
+				declare b : Company;
+				b.hire(e)		
+			end
+		
+end
+
+class Company
+	attributes
+	  name : String
+	  location : String
+	  totalSalalry : Real
+	operations
+	hire(p : Employee)
+		begin
+		end 
+	calcTotalSalary(): Real
+		begin 
+			declare emplo: Employee;
+			for emplo in Employee do 
+				self.
+		end
+  
+end
+
+-- associations
+
+association WorksFor between
+	Company[0..1] role company
+	Employee[*] role employee
+end
+
+association Manages between
+	Company[1] role company
+	Manager [1] role manager
+	
+end

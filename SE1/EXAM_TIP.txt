@@ -1,0 +1,14 @@
+2018-2019 paper
+Q1, Process models & Req. Engineering
+	( WF, UP, PT, I&I)
+Q2, modularity
+	(Coupli, Cohession, OOP principle, UML Diagram)
+Q3, USE cases 
+
+Q4, USE (HALF OF THE Q)
+
+Q5, Design patterns 
+	part whole heirearchy is composit 
+
+august exam 2018-2019
+

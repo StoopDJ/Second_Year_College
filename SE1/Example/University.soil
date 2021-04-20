@@ -1,0 +1,25 @@
+!new Student('me')
+!me.name := 'Rachel'
+!me.id := 1
+!me.numModules := 0
+
+!new Module ('maths')
+!maths.SetTitle('Maths')
+
+!new Module ('java')
+!java.SetTitle('Java')
+
+!new Module ('python')
+!python.SetTitle('Python')
+
+!me.takeModule(python, 'pythgrade')
+!pythgrade.SetMark(60)
+
+!me.takeModule(maths, 'mathsgrade')
+!mathsgrade.SetMark(70)
+
+!me.takeModule(java, 'javagrade')
+!javagrade.SetMark(60)
+
+!me.getAvGrade()
+
