@@ -1,0 +1,88 @@
+USE version 5.1.0, Copyright (C) 1999-2019 University of Bremen
+use> open Account.soil
+Account.soil> -- create class objects
+Account.soil> !create ibm : Invoice
+Account.soil> !create microsoft : Invoice
+Account.soil> !create apple : Invoice
+Account.soil> !create john : Customer
+Account.soil> !create ben : Customer
+Account.soil> !create account : ReceivablesAccount
+Account.soil> !create processor : ARProcessor
+Account.soil> 
+Account.soil> -- insert into object ibm
+Account.soil> 	!ibm.number := '10016'
+Account.soil> 	!ibm.amount := 1290.75
+Account.soil> 	
+Account.soil> -- insert into object microsoft
+Account.soil> 	!microsoft.number := '11002'
+Account.soil> 	!microsoft.amount := 2020.05
+Account.soil> 
+Account.soil> -- insert into object apple
+Account.soil> 	!apple.number := '1337'
+Account.soil> 	!apple.amount := 750.50
+Account.soil> 	
+Account.soil> --insert into object account
+Account.soil> 	!account.number := '123456'
+Account.soil> 	!account.currentBalance := 0
+Account.soil> 	!account._30DayBalance := 75.50
+Account.soil> 	!account._60DayBalance := 120.00
+Account.soil> 	!account._90DayBalance := 230.10
+Account.soil> 	!account._120DayBalance := 340.15
+Account.soil> 	!account.collections := 505.95
+Account.soil> 	
+Account.soil> -- insert into object john
+Account.soil> 	!john.id := â€™101â€™
+<input>:line 1:11 no viable alternative at character 'â'
+<input>:line 1:12 no viable alternative at character '€'
+<input>:line 1:13 no viable alternative at character '™'
+<input>:line 1:17 no viable alternative at character 'â'
+<input>:line 1:18 no viable alternative at character '€'
+<input>:line 1:19 no viable alternative at character '™'
+Account.soil> 	!john.firstName := 'John'
+Account.soil> 	!john.lastName := 'Doe'
+Account.soil> 	!john.address1 := '22 Templeroan View'
+Account.soil> 	!john.address2 := 'Knocklyon'
+Account.soil> 	!john.city := 'Dublin'
+Account.soil> 	!john.state := 'Dublin'
+Account.soil> 	!john.zip := '16'
+Account.soil> 	!john.telHome := '4928478'
+Account.soil> 	!john.telWork := '087-1539847'
+Account.soil> 	
+Account.soil> -- insert into object ben
+Account.soil> 	!ben.id := '103'
+Account.soil> 	!ben.firstName := 'Ben'
+Account.soil> 	!ben.lastName := 'McDonnell'
+Account.soil> 	!ben.address1 := '13 Prospect Heights'
+Account.soil> 	!ben.address2 := 'Dundrum'
+Account.soil> 	!ben.city := 'Dublin'
+Account.soil> 	!ben.state := 'Dublin'
+Account.soil> 	!ben.zip := '14'
+Account.soil> 	!ben.telHome := '4938277'
+Account.soil> 	!ben.telWork := '083-3692918'
+Account.soil> 	
+Account.soil> -- create associations
+Account.soil> 	!insert (ibm, account) into UnprocessedPInvoices
+Account.soil> 	!insert (microsoft, account) into UnprocessedPInvoices
+Account.soil> 	!insert (apple, account) into UnprocessedPInvoices
+Account.soil> 	!insert (john, account) into CustomerReceivables
+Account.soil> 	!insert (ben, account) into CustomerReceivables
+Account.soil> 
+Account.soil> -- run .USE operation to process the unprocessed invoices
+Account.soil> !processor.ProcessInvoices(Set{account})
+Account.soil> 
+Account.soil> -- openter to test the precondition(s)
+Account.soil> !openter processor EndOfMonthUpdate(Set{account})
+precondition `pre1' is true
+Account.soil> !set account.collections := account.collections + account._120DayBalance
+Account.soil> !set account._120DayBalance := account._90DayBalance
+Account.soil> !set account._90DayBalance := account._60DayBalance
+Account.soil> !set account._60DayBalance := account._30DayBalance
+Account.soil> !set account._30DayBalance := account.currentBalance
+Account.soil> !set account.currentBalance := 0
+Account.soil> -- output post condition(s)
+Account.soil> !opexit
+postcondition `salaryProcessed' is true
+Account.soil> 
+Account.soil> 
+Account.soil> 
+use> 

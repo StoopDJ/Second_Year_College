@@ -1,0 +1,68 @@
+-- Example illustrating pre- and postconditions
+
+model Employee
+
+-- classes
+
+class Person
+attributes
+  name : String
+  age : Integer
+  income : Real
+operations
+  calcIncome()
+end
+
+class Contract
+attributes
+jobTitle: String
+salary: Real
+operations
+  raiseSalary(rate : Real, p: Person) : Real
+end
+
+class Company
+attributes
+  name : String
+  location : String
+operations
+  hire(p : Person, c : Contract)
+  fire(p : Person, c : Contract)
+end
+
+-- associations
+
+association hiredInto between
+  Person[1] role person
+  Contract[*] role Jobs
+end
+
+association worksFor between
+Contract[1..*] role contracts
+Company[1] role company
+end
+
+-- constraints
+
+constraints
+
+context Contract::raiseSalary(rate : Real, p: Person) : Real
+  pre personAge : p.age > 20
+  post raiseSalaryPost: 
+    salary = salary@pre * (1.0 + rate)
+  post resultPost:
+    result = salary
+
+context Company::hire(p : Person, c : Contract)
+  pre   hirePre1: p.isDefined()
+  pre   hirePre2: c.isDefined()
+  pre   hirePre3: contracts->excludes(c)
+  pre   hirePre4: c.person->excludes(p)
+  post hirePost4: c.person->includes(p)
+  post hirePost1: contracts->includes(c)
+  post hirePost2: c.salary >= 20000
+  post hirePost3: contracts->includes(c)
+
+context Company::fire(p : Person, c : Contract)
+  pre  firePre:  contracts->includes(c)
+  post firePost: contracts->excludes(c)

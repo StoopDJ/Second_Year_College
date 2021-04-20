@@ -1,0 +1,256 @@
+model Library
+
+--All the books associated with the system
+
+enum BookStatus { available, unavailable, onreserve}
+
+class Book
+  attributes
+    title : String
+    author : String
+    status : BookStatus init = #available
+    ShortTerm : Boolean init = false
+    no_copies : Integer init = 0
+    no_onshelf : Integer init = 0
+  operations
+    borrow()
+    begin
+        self.no_onshelf := self.no_onshelf - 1;
+        if (self.no_onshelf = 0) then 
+                self.status := #unavailable 
+        end
+    end
+    pre copiesOnShelf: no_copies >0
+    post: no_onshelf = no_onshelf@pre - 1
+
+    return()
+    begin
+        self.no_onshelf := self.no_onshelf + 1;
+        self.status := #available
+    end
+    pre copiesOnShelf: no_copies >= 0
+    post: no_onshelf = no_onshelf@pre + 1
+
+    newCopy(c : Copy)
+    begin
+        insert (c,self) into CopyOf;
+        c.status := 'onShelf';
+        self.no_copies := self.no_copies + 1;
+        self.no_onshelf := self.no_onshelf + 1;
+        c.ShortTerm := self.ShortTerm
+    end
+
+    statemachines
+        psm States
+        states                        
+            newTitle : initial
+            available       [no_onshelf > 0]
+            unavailable     [no_onshelf = 0]
+        transitions
+            newTitle ->  unavailable  { create }
+            available -> unavailable { [no_onshelf = 1] borrow() }
+            available -> available { [no_onshelf > 1] borrow() }
+            available -> available { return() }
+            unavailable -> available { return() }
+        end
+end
+
+class Journal
+  attributes
+    title : String
+    author : String
+    onShelf : Boolean init = true
+  operations
+    borrow()
+    begin
+        self.onShelf := false
+    end
+    pre no_onshelfTrue: onShelf = true
+    post: onShelf = false
+
+    return()
+    begin
+        self.onShelf := true
+    end
+    pre no_onshelfFalse: onShelf = false
+    post: onShelf = true
+
+end
+
+class Copy
+  attributes
+    status : String
+    ReservedBy : String init = 'NA'
+    ShortTerm : Boolean
+    weeksDesired: Integer init = 0
+  operations
+    borrow()
+    begin
+        self.status := 'onLoan';
+        self.book.borrow()
+    end
+    pre cond1: if ShortTerm = true then weeksDesired <= 1 else weeksDesired <= 3 endif
+    pre cond2 : weeksDesired > 0
+    return()
+    begin
+        self.status := 'onShelf';
+        self.book.return()
+    end
+end    
+
+--All the people associated with the system  
+class Member 
+  attributes 
+    name : String
+    address : String
+    no_onloan : Integer init = 0
+    status : String init = 'Active'
+    fine : Integer init = 0
+  operations
+    borrow(c : Copy)
+    begin
+        insert (self, c) into HasBorrowed;
+        c.ReservedBy := 'NA';
+        self.no_onloan := self.no_onloan + 1;
+        c.borrow()
+    end
+
+    return(c : Copy)
+    begin
+        delete (self, c) from HasBorrowed;
+        self.no_onloan := self.no_onloan - 1;
+        c.return()
+    end
+
+    --Testing this function in !openter !opexit
+    Reserve(c : Copy)
+    --begin
+        --c.status := 'Reserved';
+        --c.ReservedBy := self.name;
+    --end
+
+    CancelReserve(c : Copy)
+    begin
+        c.status := 'onShelf';
+        c.ReservedBy := 'NA'
+    end
+end    
+
+
+class Staff 
+  attributes 
+    name : String
+    address : String
+    no_onloan : Integer init = 0
+    fine : Integer init = 0
+  operations
+  --journal work
+    JournalBorrow(j : Journal)
+    begin
+        insert (self, j) into JournalBorrowed;
+        self.no_onloan := self.no_onloan + 1;
+        j.borrow()
+    end
+
+    JournalReturn(j : Journal)
+    begin
+        delete (self, j) from JournalBorrowed;
+        self.no_onloan := self.no_onloan - 1;
+        j.return()
+    end
+
+    --book work
+    CopyBorrow(c : Copy)
+    begin
+        insert (self, c) into CopyBorrowed;
+        self.no_onloan := self.no_onloan + 1;
+        c.borrow()
+    end
+
+    CopyReturn(c : Copy)
+    begin
+        delete (self, c) from CopyBorrowed;
+        self.no_onloan := self.no_onloan - 1;
+        c.return()
+    end       
+end    
+
+--associations
+association HasBorrowed between
+    Member[0..1] role MemberBorrower
+    Copy[*] role borrowed
+end
+
+association CopyBorrowed between
+    Staff[0..1] role borrower
+    Copy[*] role copyBorrowed
+end
+
+association JournalBorrowed between
+    Staff[0..1] role StaffBorrower
+    Journal[1] role journalBorrowed
+end
+
+association CopyOf between
+    Copy[0..*] role copies
+    Book[1] role book
+end
+ 
+
+--constraints in the programme
+
+constraints
+
+--All members functions
+context Member::borrow(c:Copy) 
+    pre limit: self.no_onloan < 6
+    pre status: c.status <> 'onLoan'
+    pre Resereved:if c.ReservedBy <> 'NA' then c.ReservedBy = self.name else c.ReservedBy = 'NA' endif
+    pre cond1: self.borrowed->excludes(c)
+    post cond2: self.borrowed->includes(c)
+    post status2: c.status = 'onLoan'
+
+context Member::return(c:Copy) 
+    pre status: c.status = 'onLoan'
+    pre cond1: self.borrowed->includes(c)
+    post cond2: self.borrowed->excludes(c)
+    post status2: c.status = 'onShelf'
+
+
+context Member::Reserve(c : Copy)
+    pre status: c.status = 'onShelf'
+    post status2 :  c.status = 'Reserved'
+
+context Member::CancelReserve(c:Copy)
+    pre status: c.status = 'Reserved'
+    post status2 :  c.status = 'onShelf'
+
+--All staff functions
+context Staff::JournalBorrow(j : Journal) 
+    pre limit: self.no_onloan < 12
+    pre status1: j.onShelf = true
+    pre cond1: self.journalBorrowed->excludes(j)
+    post cond2: self.journalBorrowed->includes(j)
+    post status2: j.onShelf= false
+
+context Staff::JournalReturn(j : Journal) 
+    pre status1: j.onShelf = false
+    pre cond1: self.journalBorrowed->includes(j)
+    post cond2: self.journalBorrowed->excludes(j)
+    post status2: j.onShelf= true
+
+context Staff::CopyBorrow(c:Copy) 
+    pre limit: self.no_onloan < 12
+    pre status1: c.status = 'onShelf'
+    pre cond1: self.copyBorrowed->excludes(c)
+    post cond2: self.copyBorrowed->includes(c)
+    post status2: c.status = 'onLoan'
+
+context Staff::CopyReturn(c:Copy) 
+    pre status: c.status = 'onLoan'
+    pre cond1: self.copyBorrowed->includes(c)
+    post cond2: self.copyBorrowed->excludes(c)
+    post status2: c.status = 'onShelf'
+
+context Copy
+    inv exist: book->size() > 0
