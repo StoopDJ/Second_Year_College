@@ -1,0 +1,64 @@
+package ie.tudublin;
+
+import processing.core.PApplet;
+
+public class Drawing extends PApplet
+{	
+    float a = 0;
+    float b = 0;
+    float co = 0;
+    
+	public void settings()
+	{
+		size(500, 500);
+	}
+
+	public void setup() 
+	{
+		
+		//noFill();
+		//smooth();
+        colorMode(HSB);
+        stroke(255,0,255);
+        background(255);
+        smooth();
+        strokeWeight(3);
+		
+	}
+
+	
+	public void keyPressed()
+	{
+		if (key == ' ')
+		{
+			
+		}
+	}	
+
+
+	public void draw()
+	{   
+        stroke(co, 80, 80, 20);
+  
+        float x0 = map(sin(a), -1, 1, 20, width - 20);
+        float y0 = map(cos(a), -1, 1, 20, height - 20);
+        
+        float x1 = map(sin(b), -1, 1, 20, width - 20);
+        float y1 = map(cos(b), -1, 1, 20, height - 20);
+        
+        //background(100);
+        //stroke(0);
+        //point(x0, y0);
+        //point(x1, y1);
+        
+        line(x0, y0, x1, y1);
+        
+        a = (float) (a + 0.071);
+        b = (float) (b + 0.07);
+        
+        co = co + 1;
+        if (co > 100) {
+          co = 0;
+        }
+    }
+}

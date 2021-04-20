@@ -1,0 +1,46 @@
+package ie.tudublin;
+
+import processing.core.PApplet;
+
+public class Loops extends PApplet
+{	
+	public void settings()
+	{
+		size(500, 500);
+	}
+
+	public void setup() 
+	{
+		colorMode(HSB);
+		background(0);
+		strokeWeight(20);
+		frameRate(2);
+		
+	}
+
+	
+	public void keyPressed()
+	{
+		if (key == ' ')
+		{
+			
+		}
+	}	
+
+
+	public void draw()
+	{	
+		
+	// Get a gaussian random number w/ mean of 0 and standard deviation of 1.0
+	float val = randomGaussian();
+
+	float sd = 60;                  // Define a standard deviation
+	float mean = width/2;           // Define a mean value (middle of the screen along the x-axis)
+	float x = ( val * sd ) + mean;  // Scale the gaussian random number by standard deviation and mean
+  
+	noStroke();
+	fill(255, 10);
+	ellipse(x, height/2, 32, 32);   // Draw an ellipse at our "normal" random location
+  
+	}
+}

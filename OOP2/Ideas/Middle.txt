@@ -1,0 +1,58 @@
+package ie.tudublin;
+
+import processing.core.PApplet;
+
+public class Middle extends PApplet
+{	
+  
+
+    int CENTRE = 0;
+    int colorscale;  
+    float angle;
+   
+
+
+	public void settings()
+	{
+		size(800, 800);
+	}
+
+	public void setup() 
+	{
+		
+      colorMode(HSB,360,100,100);
+	}
+
+	
+	public void keyPressed()
+	{
+		if (key == ' ')
+		{
+			
+		}
+	}	
+
+
+	public void draw()
+	{
+        scale(0.5f* map(mouseY, 0, height,0, 10));
+        translate(width/2,height/2);
+		rotate(angle);
+		fill(colorscale,97,100);
+        rectMode(CENTRE);
+        rect(0,0,200,200);
+
+        angle += 5;
+
+        colorscale = (int) (colorscale +1.5);
+
+        if(colorscale > 359)
+        {
+            colorscale = 0;
+        }
+
+
+    }
+        
+}
+

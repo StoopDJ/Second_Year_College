@@ -1,0 +1,52 @@
+package ie.tudublin;
+
+import processing.core.PApplet;
+
+public class ACID extends PApplet
+{	
+    
+    float circle_x[] = {};
+    float circle_y[] = {};
+    // how much to move the circle on each frame
+    float move_x[] = {};
+    float move_y[] = {};   
+	public void settings()
+	{
+		size(500, 500);
+	}
+
+	public void setup() 
+	{
+		
+		//noFill();
+		//smooth();
+        colorMode(HSB);
+        stroke(255,0,255);
+		
+	}
+
+	
+	public void keyPressed()
+	{
+		if (key == ' ')
+		{
+			
+		}
+	}	
+
+
+	public void draw()
+	{ loadPixels();
+    for(int x=0; x<width; x++) {
+      for(int y=0; y<height; y++) {
+        float f = (float) (frameCount / 50.0);
+        float k = (float) (1 + 0.5*sin((float) (f*0.1)));
+        float n = 20 *
+          sin((float) (f + sin((float) (k*y/99.0))*k*x/161.0 - k*y/323.0)) *
+          sin((float) (-f*0.8 - k*x/249.0 + sin((float) (k*x/79.0))*k*y/118.0));
+        pixels[x + y*width] = color(128 + 128 * sin(n), 255, 255);
+      }
+    }
+    updatePixels();
+  }
+}

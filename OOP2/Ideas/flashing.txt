@@ -1,0 +1,60 @@
+package ie.tudublin;
+
+import processing.core.PApplet;
+
+public class flashing extends PApplet
+{	
+    float a = 0;
+	public void settings()
+	{
+		size(500, 500);
+	}
+
+	public void setup() 
+	{
+		
+        
+        background(0);
+        noFill();
+		//smooth();
+		
+		
+	}
+
+	
+	public void keyPressed()
+	{
+		if (key == ' ')
+		{
+			
+		}
+	}	
+
+
+	public void draw()
+	{
+        float diam = 100;
+        float a = 0;
+        
+        background(0);
+  
+        float x = noise(a, 10) * width;
+        float y = noise(a, 20) * height;
+      
+        float d = dist(x, y, mouseX, mouseY);
+        
+        if(d > diam) {
+          strokeWeight(1);
+        } else {
+          strokeWeight(random(10));
+        }
+        
+        stroke(255, 255, 0);
+        ellipse(x, y, diam, diam);
+        
+        stroke(0, 255, 0);
+        ellipse(mouseX, mouseY, diam, diam);
+        
+        a = (float) (a + 0.01);
+    }
+}

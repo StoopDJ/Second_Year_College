@@ -1,0 +1,98 @@
+
+
+package ie.tudublin;
+
+import processing.core.PApplet;
+
+public class Blue extends PApplet
+{	
+
+    int n = 10000;
+
+    float[] m = new float[n];
+    float[] x = new float[n];
+    float[] y = new float[n];
+    float[] vx = new float[n];
+    float[] vy = new float[n];
+    
+
+	public void settings()
+	{
+		size(800, 800);
+	}
+
+	public void setup() 
+	{
+
+        fill(0, 32);
+        reset();
+	}
+
+	
+	public void keyPressed()
+	{
+		if (key == ' ')
+		{
+			
+		}
+	}	
+
+
+public void draw()
+{
+        
+    noStroke();
+    rect(0, 0, width, height);
+   // scale(0.5f* map(mouseY, 0, height,0, 10));
+
+    for (int i = 0; i < n; i++)
+    {
+        float dx = mouseX - x[i];
+        float dy = mouseY - y[i];
+
+        float d = sqrt(dx*dx + dy*dy);
+        if (d < 1) d = 1;
+
+        float f = sin((float) (d * 0.04)) * m[i] / d;
+
+        vx[i] = (float) (vx[i] * 0.5 + f * dx);
+        vy[i] = (float) (vy[i] * 0.5 + f * dy);
+    }
+
+    for (int i = 0; i < n; i++) 
+    {
+        x[i] += vx[i];
+        y[i] += vy[i];
+
+        if (x[i] < 0) x[i] = width;
+        else if (x[i] > width) x[i] = 0;
+
+        if (y[i] < 0) y[i] = height;
+        else if (y[i] > height) y[i] = 0;
+
+        if (m[i] < 0) stroke(128, 128, 255);
+        else stroke(0, 255, 255);
+
+        point(x[i], y[i]);
+    }
+}
+
+void reset() 
+{
+    for (int i = 0; i < n; i++)
+    {
+        m[i] = randomGaussian() * 16;
+        x[i] = random(width);
+        y[i] = random(height);
+    }
+}
+    public void mousePressed()
+    {
+        reset();
+    }
+
+
+ }   
+        
+
+
