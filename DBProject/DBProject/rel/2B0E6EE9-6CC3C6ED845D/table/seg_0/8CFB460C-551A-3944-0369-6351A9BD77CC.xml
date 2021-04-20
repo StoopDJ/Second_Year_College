@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8CFB460C-551A-3944-0369-6351A9BD77CC" name="Car">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>A9D24EA4-4658-8E07-D2D2-B779F7564C15</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="car_registration" id="9228EB6B-2CF6-7408-1D66-B1C7008D1D93">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>AC70C549-D56B-0685-183D-3C588116D54F</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1A649AF6-32F2-C0A0-C264-A9908B8DE438</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="daily_cost" id="61161046-C721-7262-AF3E-EFB9807F6EFF">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>A79DA3F9-5E5F-0928-3704-762EE590884D</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>8D355B1D-65E3-625D-ABED-D5DBD50EC941</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fuel_type" id="47026642-374E-2E39-846D-0896E6B30FF1">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>93384A96-3A43-CE01-C3AB-AF1011EFA52C</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>4C925BC1-E6BF-7E92-F8C2-C643AD805716</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mileage" id="1DD8AAD6-D2CC-8C96-7588-DFAC9FF27E8F">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>B10C85FE-57BE-B9F2-5946-673BD6D2F79B</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>D3A30157-93A7-40C3-1C24-07414370269C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Model_model_id" id="969B1FE7-90C9-7293-C872-9F8A79CFB2AE">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>26E3ACE6-FB8E-650C-9F53-8E65664A17A5</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A929DD00-A06C-B580-5080-E23F21078D1E" referredColumn="825BF8D7-2E98-0601-F11F-5D1AA65429F7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AD3C8DD0-F756-9940-BE68-922A7AF942E7" name="Car_PK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>AE61B406-12DF-2C5E-1B7A-752DBDBB8B1C</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9228EB6B-2CF6-7408-1D66-B1C7008D1D93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1CA7848-45C9-5ED7-1A5A-78447E9261F4" name="Car_Model_FK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>218AB824-DB57-F612-46EA-981194299ABA</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="969B1FE7-90C9-7293-C872-9F8A79CFB2AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="716D55FC-5FCD-9318-51AB-5C369A596D64" name="Bill">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 17:48:57 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="bill_id" id="4009F45C-620C-5F32-44AB-E4E25331C9D7">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 20:15:05 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rent_cost" id="CB827B6A-2D1A-A0B6-56B7-166BDAAD4C24">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 20:28:30 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>8D355B1D-65E3-625D-ABED-D5DBD50EC941</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mileage_exceed_charge" id="6D266423-FAAF-ABFE-941C-1290054FAE05">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 20:27:05 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>8D355B1D-65E3-625D-ABED-D5DBD50EC941</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_cost" id="CCCB7F2C-E0B8-D9D5-8735-5E7A2420F905">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 20:27:49 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>8D355B1D-65E3-625D-ABED-D5DBD50EC941</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="car_usage_id" id="5A8C1260-9131-3FBA-A151-35353058F178">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 23:59:19 UTC</createdTime>
+<generatorID>6515CD9D-7500-3825-BA2F-EF17CB623C49</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<referedAttribute>34A08605-FE8A-E74A-2CBA-1417D2662505</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="car_registration" id="33FBF3C9-E7C1-AADE-ECFF-B658B5944611">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 00:26:56 UTC</createdTime>
+<generatorID>87C219B8-E821-43C0-0E60-2C2FBD618573</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<referedAttribute>AC70C549-D56B-0685-183D-3C588116D54F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1A649AF6-32F2-C0A0-C264-A9908B8DE438</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="customer_id" id="4E672664-0F54-5BAE-2230-F50A8D9F4D1B">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 00:30:13 UTC</createdTime>
+<generatorID>5E7342CF-8969-E150-33C5-F84EC15243B0</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<referedAttribute>2A35EC7A-8D80-BB66-B7B4-B5A09C20B296</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rent_contract_id" id="E9CCAC7C-0D96-E541-AFDB-1FEFE6F5E6B6">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 00:38:06 UTC</createdTime>
+<generatorID>46CA952A-7F2A-76DB-4E4F-2D32C8CCF473</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<referedAttribute>A3676C77-3CAB-0C3E-4932-821DF0E8D29E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AF5F08C5-EB82-83CE-0D16-D8234A2F9BC5" name="Bill PK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 20:24:37 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4009F45C-620C-5F32-44AB-E4E25331C9D7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

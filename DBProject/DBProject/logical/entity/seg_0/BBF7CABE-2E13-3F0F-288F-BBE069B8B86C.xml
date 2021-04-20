@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BBF7CABE-2E13-3F0F-288F-BBE069B8B86C" name="Sales_Rep">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 17:49:47 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="sales_rep_id" id="3BED40AE-C844-87CE-FC04-7C56F332665D">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 20:33:38 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="title" id="6E2C43E1-49C4-1253-581A-321BF18EED07">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 20:34:26 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>72C308DC-7BAF-17BC-273C-B040D4C2706F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first_name" id="0E26C7C0-C420-7AFC-96DC-B03201474793">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 20:34:51 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6F2D6493-E12B-43CD-93D8-991C3ED9E3DF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="8F36D366-363F-6BDA-C081-4F1518AA7AD2">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 20:34:58 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6F2D6493-E12B-43CD-93D8-991C3ED9E3DF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="address" id="467CC231-AD8A-CFDB-E861-F7CE6AA0B8E3">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 20:36:41 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>ACD1C7DA-0959-63AF-F2A1-8E05C8037DC2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone_number" id="9779E4B4-F3D6-AB6C-D977-D7F4977E232E">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 20:35:41 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1060057A-B52D-9277-B002-BC0BEC3C8DE5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="7937FA1E-0D6A-6B58-051E-65C3D1AF86DF">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 20:36:52 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5DDBD8EB-DB3E-F7F6-CB28-E9D38883F553</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="branch_id" id="26EAF073-7843-1809-D344-CB7B68D9BA9C">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 23:23:06 UTC</createdTime>
+<generatorID>2BAF3964-9EFE-130D-1A89-C42819BB858F</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<referedAttribute>755C9F18-798B-B786-F521-AC8F9E135904</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2C93FE3C-09CE-7B63-469F-3EC3DA14945C" name="Sales_Rep PK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 21:02:48 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3BED40AE-C844-87CE-FC04-7C56F332665D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3456B69E-B2F6-12C3-34E2-4952C6CB68AB" name="Model">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>DD6DF159-1E77-CFE2-614A-81DC1197EBDC</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="model_id" id="825BF8D7-2E98-0601-F11F-5D1AA65429F7">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>3D7EAE11-3F41-2C0E-6AB2-0C47187E0980</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="manufacturer" id="A468843A-DBB9-208C-E78C-AAA159CD4759">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>816DAC87-4DF9-97AA-7615-AA559B0AF976</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6F2D6493-E12B-43CD-93D8-991C3ED9E3DF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="model" id="A3E7977F-8EB2-A74D-5695-0E90B5840882">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>DE46B6B5-D2F0-9BD7-6554-98B2B8367315</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6F2D6493-E12B-43CD-93D8-991C3ED9E3DF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="category" id="C21256D9-E5AE-FD6C-003E-2DA57C6B4E93">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>0F2D6797-A1F8-4012-0359-498869E4EDB5</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6F2D6493-E12B-43CD-93D8-991C3ED9E3DF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6370967B-F4E3-5301-A422-C2EEA698B0E4" name="Model_PK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>D8F48CE2-96D9-D4B1-61AD-4D1673893C6B</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="825BF8D7-2E98-0601-F11F-5D1AA65429F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

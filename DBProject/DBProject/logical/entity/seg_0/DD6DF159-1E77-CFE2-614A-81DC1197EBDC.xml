@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DD6DF159-1E77-CFE2-614A-81DC1197EBDC" name="Model">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 17:29:55 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="model_id" id="3D7EAE11-3F41-2C0E-6AB2-0C47187E0980">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 17:32:00 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="manufacturer" id="816DAC87-4DF9-97AA-7615-AA559B0AF976">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 17:33:49 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6F2D6493-E12B-43CD-93D8-991C3ED9E3DF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="model" id="DE46B6B5-D2F0-9BD7-6554-98B2B8367315">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 17:35:12 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6F2D6493-E12B-43CD-93D8-991C3ED9E3DF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="category" id="0F2D6797-A1F8-4012-0359-498869E4EDB5">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 17:35:28 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6F2D6493-E12B-43CD-93D8-991C3ED9E3DF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D8F48CE2-96D9-D4B1-61AD-4D1673893C6B" name="Model PK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 17:32:10 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>3D7EAE11-3F41-2C0E-6AB2-0C47187E0980</newElementsIDs>
+<usedAttributes>
+<attributeRef>3D7EAE11-3F41-2C0E-6AB2-0C47187E0980</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

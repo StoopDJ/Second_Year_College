@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C5718020-9B57-5A20-18B3-EE0F03C28C1B" name="Rent_Contract">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 17:37:41 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rent_contract_id" id="A3676C77-3CAB-0C3E-4932-821DF0E8D29E">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 17:38:30 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rent_period_start" id="EBEDAE04-2CD2-32A2-23CE-AC105DF00839">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 17:39:01 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>7B8810B5-EDF8-A748-DFF2-4F7DA3ACAE7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rent_period_end" id="C747866F-1285-6E22-BE21-4991F3B968DB">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 17:39:30 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>7B8810B5-EDF8-A748-DFF2-4F7DA3ACAE7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fuel_in_tank" id="A3AEB3D9-9946-20D2-CCC6-398CF6040A4A">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 17:39:52 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>30C34D1F-A447-4225-0568-B9AFF6DABD44</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pickup_location" id="4C53221C-746B-4F4B-4703-677AB62E5B0D">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 17:40:23 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>ACD1C7DA-0959-63AF-F2A1-8E05C8037DC2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="return_location" id="D2848D8C-4DE2-6DA7-8732-2EB147E53F0B">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 17:41:15 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>ACD1C7DA-0959-63AF-F2A1-8E05C8037DC2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="customer_id" id="3C001803-FB89-C39D-E848-A100FC27CDBD">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 00:06:54 UTC</createdTime>
+<generatorID>47F9DBCE-2778-7E98-79A5-33EB8AA0E3C6</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<referedAttribute>2A35EC7A-8D80-BB66-B7B4-B5A09C20B296</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="car_registration" id="76D5D248-633B-C83B-BB08-E3C33E1FDEFD">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 00:08:37 UTC</createdTime>
+<generatorID>C3E0D678-5303-5B6F-C967-81F1FE2366D4</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<referedAttribute>AC70C549-D56B-0685-183D-3C588116D54F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1A649AF6-32F2-C0A0-C264-A9908B8DE438</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sales_rep_id" id="D81C66AC-AAF1-32BE-8C12-CC207AF523E9">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 00:25:52 UTC</createdTime>
+<generatorID>1700CDA2-590D-E86B-F226-712D61946E10</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<referedAttribute>3BED40AE-C844-87CE-FC04-7C56F332665D</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BA809549-6152-364C-E0C1-B91689FE0E6B" name="Rent_Contract PK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 17:41:26 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A3676C77-3CAB-0C3E-4932-821DF0E8D29E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

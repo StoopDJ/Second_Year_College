@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="16A276B0-28E7-68C4-3B37-9C0D1DBE9210" name="Customer">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>D84E9A4D-EE32-B53B-953C-A844B898C61C</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="customer_id" id="09D5B89A-CC85-B3C1-C85D-DBF6C17B9B8B">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>2A35EC7A-8D80-BB66-B7B4-B5A09C20B296</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="1357B3E1-DAC5-38A9-ED0D-3999F9A8C408">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>521F6689-FC93-3DAC-9DFC-2C677EDF96CE</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>72C308DC-7BAF-17BC-273C-B040D4C2706F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_name" id="CF125D23-7426-17D5-EA21-57B36CD0E882">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>2B0CBDA1-645E-540A-7E83-13F9BB293DF1</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6F2D6493-E12B-43CD-93D8-991C3ED9E3DF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="CCA632D2-F4CC-A86E-4E0B-4D285FDFCBFE">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>65969549-40AB-D8CC-8C7B-EB7D2E008F94</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6F2D6493-E12B-43CD-93D8-991C3ED9E3DF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="5598FF9D-1B7C-193F-6373-3BEE657D2A68">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>CE26B088-897F-515F-F84B-05CD2D0DE452</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>ACD1C7DA-0959-63AF-F2A1-8E05C8037DC2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="A6267163-4299-E5EF-919B-F55BA6449AED">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>D96E4DBC-41C2-D21C-7FF4-B7D468C4FA5A</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5DDBD8EB-DB3E-F7F6-CB28-E9D38883F553</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_of_birth" id="515FF538-3FD5-376E-0AED-31DF59283B57">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>86C34E01-DEDF-86F8-8FA9-C789686D0FEE</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>7B8810B5-EDF8-A748-DFF2-4F7DA3ACAE7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="37977633-8634-633F-764C-0E80CD5CA8C7" name="Customer_PK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>CDE8B6CD-290F-15CE-5B46-AD1217A04B72</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09D5B89A-CC85-B3C1-C85D-DBF6C17B9B8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CHECK_DATEOFBIRTH" directorySegmentName="seg_0" id="D442A58C-3F2A-C4F9-012B-B2B3099110FB">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-17 22:12:51 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<rule><![CDATA[date_of_birth >= '2001-12-4']]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

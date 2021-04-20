@@ -1,0 +1,198 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5D13FC2E-A60B-EC6B-86C8-C9C9437D01DE" name="Bill">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>716D55FC-5FCD-9318-51AB-5C369A596D64</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bill_id" id="59A51C57-DB6A-310C-3432-C2BDB24DCBF8">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>4009F45C-620C-5F32-44AB-E4E25331C9D7</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rent_cost" id="67886DB2-46FA-248D-2063-ED952A068278">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>CB827B6A-2D1A-A0B6-56B7-166BDAAD4C24</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>8D355B1D-65E3-625D-ABED-D5DBD50EC941</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mileage_exceed_charge" id="3C1DBB0A-6FA0-2A23-3A64-EE8F448741B9">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>6D266423-FAAF-ABFE-941C-1290054FAE05</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>8D355B1D-65E3-625D-ABED-D5DBD50EC941</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_cost" id="5A7173C1-0377-8732-23F0-B7B9490602E6">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>CCCB7F2C-E0B8-D9D5-8735-5E7A2420F905</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>8D355B1D-65E3-625D-ABED-D5DBD50EC941</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Car_Usage_car_usage_id" id="7E40C2CA-AD3C-B5FC-9F8E-5F3BAE20D003">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>5A8C1260-9131-3FBA-A151-35353058F178</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2A84F95-55DA-8A29-186F-027909C2F8AA" referredColumn="E680EA1E-FFE9-AFA7-CB91-84716C969966"/>
+</associations>
+</Column>
+<Column name="Car_car_registration" id="50260721-4946-23FF-00F8-938030400E5B">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>33FBF3C9-E7C1-AADE-ECFF-B658B5944611</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1A649AF6-32F2-C0A0-C264-A9908B8DE438</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="38E31F1B-4E03-642B-D224-7B0AE7BB0603" referredColumn="9228EB6B-2CF6-7408-1D66-B1C7008D1D93"/>
+</associations>
+</Column>
+<Column name="Customer_customer_id" id="95DA0F89-E799-F680-29C0-39EF95F495A5">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>4E672664-0F54-5BAE-2230-F50A8D9F4D1B</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C7B4E331-5F10-CFF9-C34E-64433B8E1F2C" referredColumn="09D5B89A-CC85-B3C1-C85D-DBF6C17B9B8B"/>
+</associations>
+</Column>
+<Column name="Rent_Contract_rent_contract_id" id="DF39FBD2-AE1D-42D0-515C-42FEE4DA1645">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>E9CCAC7C-0D96-E541-AFDB-1FEFE6F5E6B6</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A12B116C-C485-3E05-E617-8C231EA933D1" referredColumn="023FAAEA-2E92-E227-2A06-842FC72F12B5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EE97F0F4-3A67-92ED-683B-9BBCF0A09C6F" name="Bill_PK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>AF5F08C5-EB82-83CE-0D16-D8234A2F9BC5</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59A51C57-DB6A-310C-3432-C2BDB24DCBF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F41D2269-4491-1E06-E24B-F538B7CD8176" name="Bill__IDX">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>6515CD9D-7500-3825-BA2F-EF17CB623C49</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="7E40C2CA-AD3C-B5FC-9F8E-5F3BAE20D003"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="564A30D3-4C37-B084-117E-C437F911A9BE" name="Bill__IDXv1">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>46CA952A-7F2A-76DB-4E4F-2D32C8CCF473</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="DF39FBD2-AE1D-42D0-515C-42FEE4DA1645"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7A3FFE84-7124-7DE6-FDAB-F203AD1663FF" name="Bill_Car_Usage_FK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>6515CD9D-7500-3825-BA2F-EF17CB623C49</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E40C2CA-AD3C-B5FC-9F8E-5F3BAE20D003"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E57805DA-239A-8136-7BC6-726FF502C581" name="Bill_Car_FK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>87C219B8-E821-43C0-0E60-2C2FBD618573</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50260721-4946-23FF-00F8-938030400E5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B51F92D-55B2-6816-F10F-1BA0CF5E05C6" name="Bill_Customer_FK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>5E7342CF-8969-E150-33C5-F84EC15243B0</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95DA0F89-E799-F680-29C0-39EF95F495A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="22A52F88-0D25-07C3-80C9-3F2B1EB48342" name="Bill_Rent_Contract_FK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>46CA952A-7F2A-76DB-4E4F-2D32C8CCF473</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF39FBD2-AE1D-42D0-515C-42FEE4DA1645"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

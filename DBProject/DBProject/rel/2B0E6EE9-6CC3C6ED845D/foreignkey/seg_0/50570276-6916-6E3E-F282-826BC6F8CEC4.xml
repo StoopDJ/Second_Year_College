@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="50570276-6916-6E3E-F282-826BC6F8CEC4" containerWithKeyObject="E2C3FB41-41AB-715D-D848-2EFAD7CA6752" localFKIndex="9B3D3B5B-1A4E-A474-710A-0CA85CB3D768" name="Rent_Contract_Sales_Rep_FK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>1700CDA2-590D-E86B-F226-712D61946E10</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<referredTableLongName>Sales_Rep</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>83F304DA-8CC3-9483-A991-5502C404310D</referredTableID>
+<keyObject>B143A16D-E47E-F816-D832-C75AD971A63B</keyObject>
+<referredKeyID>B143A16D-E47E-F816-D832-C75AD971A63B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>sales_rep_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

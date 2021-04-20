@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF302C2A-AE50-EDFD-B5FF-DAC5D338DF10" name="Branch">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>D612E24F-C95B-9D0D-7EDA-260F5ADE611D</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="branch_id" id="719EE571-20F5-CF78-A517-969F263FE03C">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>755C9F18-798B-B786-F521-AC8F9E135904</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="975FB409-09D9-9E48-D1BD-EF1889B191A8">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>A81C8B9A-6C37-E2A2-E395-6907630D270E</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>ACD1C7DA-0959-63AF-F2A1-8E05C8037DC2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone_number" id="CC829D08-5323-B414-5E14-111CEF957B32">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>7813A19B-F6EB-1488-5743-E389D4EFA12D</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1060057A-B52D-9277-B002-BC0BEC3C8DE5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A51EF1AD-1EFC-173B-EDAE-3031BACEECAF" name="Branch_PK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>F6A8A5E9-09B0-1FEC-2DC3-D36825D4AD94</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="719EE571-20F5-CF78-A517-969F263FE03C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

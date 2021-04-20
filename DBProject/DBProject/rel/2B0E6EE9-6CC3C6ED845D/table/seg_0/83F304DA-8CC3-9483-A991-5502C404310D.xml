@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="83F304DA-8CC3-9483-A991-5502C404310D" name="Sales_Rep">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>BBF7CABE-2E13-3F0F-288F-BBE069B8B86C</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sales_rep_id" id="A3AB9C7E-AFF0-661E-529D-88DB120C6DC1">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>3BED40AE-C844-87CE-FC04-7C56F332665D</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="8062FDC5-C689-BE72-EA28-F74021B2D087">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>6E2C43E1-49C4-1253-581A-321BF18EED07</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>72C308DC-7BAF-17BC-273C-B040D4C2706F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_name" id="99AD756B-5678-0B20-4CDF-D6A5C10647A9">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>0E26C7C0-C420-7AFC-96DC-B03201474793</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6F2D6493-E12B-43CD-93D8-991C3ED9E3DF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="E10A1DC5-6F2F-4B99-1A53-B6FD07D5BA75">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>8F36D366-363F-6BDA-C081-4F1518AA7AD2</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6F2D6493-E12B-43CD-93D8-991C3ED9E3DF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="3D6EBB8C-AD2C-3E34-7B30-CC5FBA210078">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>467CC231-AD8A-CFDB-E861-F7CE6AA0B8E3</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>ACD1C7DA-0959-63AF-F2A1-8E05C8037DC2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone_number" id="EE13267D-EF7D-8E3B-55D4-70655F4949F0">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>9779E4B4-F3D6-AB6C-D977-D7F4977E232E</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1060057A-B52D-9277-B002-BC0BEC3C8DE5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="D54302D9-5734-5557-6164-F620A61C8B97">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>7937FA1E-0D6A-6B58-051E-65C3D1AF86DF</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5DDBD8EB-DB3E-F7F6-CB28-E9D38883F553</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Branch_branch_id" id="D312EB48-2720-0792-8FE8-F5EB466E8C0E">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>26EAF073-7843-1809-D344-CB7B68D9BA9C</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0281CE1B-0C21-D88A-2447-60462AB7819D" referredColumn="719EE571-20F5-CF78-A517-969F263FE03C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B143A16D-E47E-F816-D832-C75AD971A63B" name="Sales_Rep_PK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>2C93FE3C-09CE-7B63-469F-3EC3DA14945C</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3AB9C7E-AFF0-661E-529D-88DB120C6DC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="665B3890-073A-28EB-E852-9B3529D12C4D" name="Sales_Rep_Branch_FK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>2BAF3964-9EFE-130D-1A89-C42819BB858F</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D312EB48-2720-0792-8FE8-F5EB466E8C0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CHECK_EMAIL" directorySegmentName="seg_0" id="4BC3DFA3-0DC9-76F2-6077-31678B88C996">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-17 22:28:41 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<rule><![CDATA[like '%@speedyrentals.com']]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

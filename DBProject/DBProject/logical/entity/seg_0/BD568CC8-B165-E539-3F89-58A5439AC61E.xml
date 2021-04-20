@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BD568CC8-B165-E539-3F89-58A5439AC61E" name="Car_Usage">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 23:56:18 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="car_usage_id" id="34A08605-FE8A-E74A-2CBA-1417D2662505">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 23:56:40 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mileage_at_start" id="9CDA3D1C-4D4B-5120-BA37-38B64C331EED">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 23:57:03 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>D3A30157-93A7-40C3-1C24-07414370269C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mileage_at_end" id="E168C938-38E7-130F-9540-190E074A84C4">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 23:57:22 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>D3A30157-93A7-40C3-1C24-07414370269C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pickup_time" id="7B7668A3-E981-D07B-435C-BC0322E6DB02">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 23:57:47 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>793E93C1-E539-632E-CDE8-2DC7C9E13F41</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="return_time" id="3547FF63-5960-2899-ECE8-AAE116117C2A">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 23:58:12 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>793E93C1-E539-632E-CDE8-2DC7C9E13F41</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="car_registration" id="6119DFA4-D33D-A059-4AA5-4DEF582B1189">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 00:31:33 UTC</createdTime>
+<generatorID>A5E0A14F-CAAE-CEA2-C723-6B6689FD4FEF</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<referedAttribute>AC70C549-D56B-0685-183D-3C588116D54F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1A649AF6-32F2-C0A0-C264-A9908B8DE438</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rent_contract_id" id="1BC05A9F-CA89-DAA4-5CEE-588620116964">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 00:32:30 UTC</createdTime>
+<generatorID>EEE573AD-8F80-19A9-98BA-9EA8A468506F</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<referedAttribute>A3676C77-3CAB-0C3E-4932-821DF0E8D29E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4E298A74-3144-AD7B-95DA-394ED5D722EF" name="Car_Usage PK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-13 23:57:43 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>34A08605-FE8A-E74A-2CBA-1417D2662505</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

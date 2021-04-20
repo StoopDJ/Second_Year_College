@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E29B3E08-AE2C-54E8-0FE2-25AFD24471BD" name="Transaction">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>1A2FB999-90A0-0E36-6CBF-C416B7B1BDFD</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="transaction_id" id="2AA0FEAD-4DFB-FF96-7E83-1CD605E1AB79">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>877AFADA-CE9A-8738-2C97-C770BF9952EE</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="transaction_status" id="A7C9B71B-E1C8-5DB9-0FC4-6A70F3031065">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>1527D00F-5A77-E5DE-084B-5FA14786AEBD</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6F2D6493-E12B-43CD-93D8-991C3ED9E3DF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="time" id="9ECB711C-3220-B286-CC43-2DC4BACFFCB6">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>F67912E9-2EA2-C0FF-33F8-2A1848933058</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<domain>793E93C1-E539-632E-CDE8-2DC7C9E13F41</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Sales_Rep_sales_rep_id" id="922E6131-5575-9E7F-9F51-3BCD09359C4F">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>7E8385C6-0D14-F295-8C65-C0BD6DB847EA</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0C41C243-5BF4-A9F1-4A52-253CEFB0C4F0" referredColumn="A3AB9C7E-AFF0-661E-529D-88DB120C6DC1"/>
+</associations>
+</Column>
+<Column name="Branch_branch_id" id="65A7C11A-8FBF-7DD0-7D97-8F9D40D317AA">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>40405AEC-6E5E-5843-E3AC-ECCF783BCF82</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CE8EBFF2-93C4-863A-8F7F-A85D769E34B3" referredColumn="719EE571-20F5-CF78-A517-969F263FE03C"/>
+</associations>
+</Column>
+<Column name="Rent_Contract_rent_contract_id" id="20B57EDE-8248-0493-8119-2EF445E38B31">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>279439FD-86E0-D896-1E69-46B174E759FE</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>BCD88B5A-02A0-4856-7759-431DBC2153F3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2CB4068A-BB4F-6ECD-D611-C1431BAA2A78" referredColumn="023FAAEA-2E92-E227-2A06-842FC72F12B5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="21036E52-7CCD-18EA-4256-1E2221B26786" name="Transaction_PK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>D49B1C8C-9192-93ED-95A9-65EA5B360BE3</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2AA0FEAD-4DFB-FF96-7E83-1CD605E1AB79"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98CB2715-A553-C8AB-D35E-588C50F36A74" name="Transaction__IDX">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>C5A8093E-4E85-1470-2841-A637BD4DC1A8</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="20B57EDE-8248-0493-8119-2EF445E38B31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5AF67AC9-5938-17BD-9133-6BEFB9AC0072" name="Transaction_Branch_FK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>5E06F152-8348-7532-8BDE-A8645426B6C1</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65A7C11A-8FBF-7DD0-7D97-8F9D40D317AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BCC5D04-48CE-0431-1DCF-E2A9E0B23644" name="Transaction_Rent_Contract_FK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>C5A8093E-4E85-1470-2841-A637BD4DC1A8</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20B57EDE-8248-0493-8119-2EF445E38B31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="51501CA2-8235-E053-35C6-D8E5CCE18260" name="Transaction_Sales_Rep_FK">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 01:00:50 UTC</createdTime>
+<generatorID>97089103-9BBB-C25B-10CD-0AF5A08E6FFA</generatorID>
+<ownerDesignName>DBProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="922E6131-5575-9E7F-9F51-3BCD09359C4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

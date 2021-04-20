@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="BranchAccomodatesTransaction" directorySegmentName="seg_0" id="5E06F152-8348-7532-8BDE-A8645426B6C1">
+<createdBy>Alanas</createdBy>
+<createdTime>2019-11-14 00:18:06 UTC</createdTime>
+<ownerDesignName>DBProject</ownerDesignName>
+<engineerTo>
+<item key="2B0E6EE9-C40A-60CD-A441-6CC3C6ED845D" value="true"/>
+</engineerTo>
+<sourcePk>F6A8A5E9-09B0-1FEC-2DC3-D36825D4AD94</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D612E24F-C95B-9D0D-7EDA-260F5ADE611D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1A2FB999-90A0-0E36-6CBF-C416B7B1BDFD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
